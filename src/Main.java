@@ -1,10 +1,11 @@
-// src/Main.java
-// src/Main.java
-import model.Task;
+
+// Main.java
+import service.TaskManager;
 
 public class Main {
     public static void main(String[] args) {
-        Task t = new Task("Sample Task");
-        System.out.println(t.getTitle());
+        TaskManager manager = new TaskManager();
+        manager.addTask("Task 1");
+        System.out.println(manager.getTasks().size());
     }
 }
