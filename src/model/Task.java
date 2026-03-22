@@ -1,14 +1,18 @@
-// src/model/Task.java
 package model;
 
 public class Task {
-    private final String title;
+    String title;
+    public boolean isCompleted;
 
     public Task(String title) {
         this.title = title;
+        this.isCompleted = false;
     }
 
-    public String getTitle() {
-        return title;
+    public void display() {
+        System.out.println(title + " - " + (isCompleted ? "Done" : "Pending"));
+    }
+
+    public boolean isCompleted() {
     }
 }

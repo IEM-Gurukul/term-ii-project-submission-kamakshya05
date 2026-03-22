@@ -1,20 +1,19 @@
-// service/TaskManager.java
 package service;
 
-import java.util.ArrayList;
 import model.Task;
 
+import java.util.ArrayList;
+
 public class TaskManager {
-    private final ArrayList<Task> tasks = new ArrayList<>();
+    ArrayList<Task> tasks = new ArrayList<>();
 
     public void addTask(String title) {
         tasks.add(new Task(title));
     }
 
-    public ArrayList<Task> getTasks() {
-        return tasks;
-    }
-
-    public void displayTasks() {
+    public void viewTasks() {
+        for (Task t : tasks) {
+            t.display();
+        }
     }
 }
