@@ -14,4 +14,7 @@ public class TaskManager {
     public ArrayList<Task> getTasks() {
         return tasks;
     }
+
+    public void displayTasks() {
+    }
 }
