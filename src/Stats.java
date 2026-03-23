@@ -10,7 +10,8 @@ public class Stats {
             if (t.isCompleted()) completed++;
 
 
-        System.out.println("Completed: " + completed);
-        System.out.println("Total: " + tasks.size());
+            System.out.println("Completed: " + completed);
+            System.out.println("Total: " + tasks.size());
+        }
     }
 }
